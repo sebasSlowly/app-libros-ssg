@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+<section class="hero is-primary is-fullheight header-image">
+  <div class="hero-body">
+        <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre de la Editorial</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for editorial in editoriales %}
+                        <tr>
+                            <td>{{editorial.nombre_editorial}}</td>
+                            <td><a class="fa fa-edit" style="font-size:25px" href="/editareditorial/{{editorial.id_editorial}}"></a></td>
+                            <td><a class="fa fa-trash" style="font-size:25px" href="/eliminareditorial/{{editorial.id_editorial}}"></a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                </script>
+            </form>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

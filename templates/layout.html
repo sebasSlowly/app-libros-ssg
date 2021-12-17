@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/a8276bf462.js" crossorigin="anonymous"></script>
+        <title>
+            {% block title %}
+
+            {% endblock %}
+        </title>
+
+    {% endblock %}
+
+    {% block encabezado %}
+    <link rel="stylesheet" href="/static/css/estilo.css">
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link"><img src="/static/LogoTec2.png" height="45"> Aplicacion de Libros</a>
+        <ul class="nav-menu">
+          <li class="nav-menu-item"><a href="/editorial" class="nav-menu-link nav-link">Registrar Editorial</a></li>
+          <li class="nav-menu-item"><a href="/libro" class="nav-menu-link nav-link">Registrar libro</a></li>
+          <li class="nav-menu-item"><a href="/autor" class="nav-menu-link nav-link">Registrar Autor</a></li>
+          <li class="nav-menu-item"><a href="/genero" class="nav-menu-link nav-link">Registrar Genero</a></li> 
+          <li class="nav-menu-item"><a href="/libro_lista" class="nav-menu-link nav-link">Catalogo de libro</a></li> 
+          <li class="nav-menu-item"><a href="/leerautores" class="nav-menu-link nav-link">Autores</a></li>  
+          <li class="nav-menu-item"><a href="/leergenero" class="nav-menu-link nav-link">Generos</a></li>
+          <li class="nav-menu-item"><a href="/leereditorial" class="nav-menu-link nav-link">Editorial</a></li>
+          <li class="nav-menu-item"><a href="/" class="nav-menu-link nav-link">Cerrar sesion</a></li>
+        </ul>
+      </nav>
+    
+    </header>
+    
+    {% endblock %}
+
+
+</head>
+
+
+<body >
+  
+<div id="content">
+  
+    {% block content %}
+    
+    
+    
+    
+    {% endblock %}
+</div>
+
+
+<div id="footer">
+    {% block footer %}
+        &copy; Copyright 2021 by <a href="">Sebastian Sosa</a>
+    {% endblock %}
+    </div>
+</body>
+</html>

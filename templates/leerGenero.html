@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+<section class="hero is-primary is-fullheight header-image">
+  <div class="hero-body">
+        <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre del Genero</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for genero in generos %}
+                        <tr>
+                            <td>{{genero.nombre_genero}}</td>
+                            <td><a class="fa fa-edit" style="font-size:25px" href="/editargenero/{{genero.id_genero}}"></a></td>
+                            <td><a class="fa fa-trash" style="font-size:25px" href="/eliminargenero/{{genero.id_genero}}"></a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                </script>
+            </form>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

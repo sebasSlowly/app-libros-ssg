@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<table class="table">
+    <thead>
+      <tr>
+        <th>Id libro</th>
+        <th>Libro</th>
+        <th>Fecha de publicacion </th>
+        <th>Num paginas </th>
+        <th>Formato</th>
+        <th>Volumen</th>
+        <th>Editorial</th>
+        <th>Autor</th>
+        <th>Genero</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+        <th>Favorito</th>        
+      </tr>
+    </thead>
+    <tbody>
+      {% for libro in consulta %}
+        <tr>
+          <td>{{libro.id_libro}}</td>
+          <th>{{libro.titulo_libro}}</th>
+          <th>{{libro.fecha_publicacion}}</th>
+          <th>{{libro.numero_paginas}}</th>
+          <th>{{libro.formato}}</th>
+          <th>{{libro.volumen}}</th>
+          <th>{{libro.nombre_editorial}}</th>
+          <th>{{libro.nombre_autor}}</th>
+          <th>{{libro.nombre_genero}}</th>
+        
+
+          <td><a class="button is-primary" href="/editar_libro/{{libro.id_libro}}"><i class="fas fa-pencil-alt"></i></a></td>
+          <td><a class="button is-danger" href="/eliminarlibro/{{libro.id_libro}}"><i class="fas fa-trash"></i></a></td>
+          <td><a class="fa fa-star" style="font-size:25px" href="/agregarFavorito/{{libro.id_libro}}"></a></td>
+      
+          
+        </tr>
+      {% endfor %}
+      </tbody>
+    
+  </table>
+{% endblock %}

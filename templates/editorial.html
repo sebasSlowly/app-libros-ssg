@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+  <section class="hero is-primary is-fullheight">
+    <div class="hero-body" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV_3j_5tM08KjS1QOK1HHnYX0wGKuuUXUuAQ&usqp=CAU');">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+            <!--Formulario-->
+            <form action="/registrarEditorial" method="post" class="box">
+              <div class="field">
+                <label for="" class="label">nombre editorial</label>
+                <div class="control has-icons-left">
+                  <input type="text" name="nombre_editorial" class="input" required>
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-keyboard"></i>
+                  </span>
+                </div>
+                <div class="field">
+                    <div>
+                        <button class="button is-success"> Registrar </button>
+                    </div>
+                  
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

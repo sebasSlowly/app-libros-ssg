@@ -1,0 +1,98 @@
+body{
+    font-family: sans-serif;
+    background-color:aquamarine;
+    
+}
+
+h1{
+    padding: 0;
+    background:gray;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color:black;
+}
+footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: azure;
+  color: white;
+  text-align: center;
+}
+
+.header{
+    padding: 1px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 10px;
+
+}
+.nav{
+    display: flex;    
+    justify-content:flex-start;
+}
+.nav-link{
+    color: black;
+    text-decoration: none;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5 10px;
+    line-height: 30px;
+}
+.nav-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-menu-item{
+    display: inline-table;
+    font-size: 17px;
+    margin: 0 3px;
+    line-height:90px;
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+   
+}
+.nav-menu-link:hover{
+background-color: #034574;
+transition: 0.5s;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color:black;
+    text-align:left;
+}
+
+
+.special{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: black;
+}
+
+table, th, td {
+    justify-content: center;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+
+  } 
+
+style{
+    
+    background-repeat: no-repeat;
+}
